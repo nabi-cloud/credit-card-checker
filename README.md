@@ -34,7 +34,9 @@ To use this credit card validator, follow these steps:
 
 ## Process: Luhn Algorithm
 
-The validation process employs the Luhn algorithm, also known as the "modulus 10" or "mod 10" algorithm. This algorithm verifies the authenticity of a credit card number by performing a specific formula on its digits. If the result is divisible by 10, the credit card number is considered valid. Here is a visual outline of the steps:
+The validation process employs the Luhn algorithm, also known as the "modulus 10" or "mod 10" algorithm. This algorithm verifies the authenticity of a credit card number by performing a specific process on its digits.
+
+Starting from the left, excluding the last digit or also known as "check digit", double every other digit. If the number is greater than 9 after doubling it, subtract 9 from its value. Sum up all the digits in the credit card number. If the result is divisible by 10, the credit card number is considered valid. Here is a visual outline of the steps:
 
 <br>
 
